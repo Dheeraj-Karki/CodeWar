@@ -25,7 +25,7 @@ class SmartPtr
         // Overloding arrow operator so that members of T can be accessed
         // like a pointer (useful if T represents a class or struct or 
         // union type)
-        T& operator ->()
+        T* operator ->()
         {
             return m_ptr;
         }

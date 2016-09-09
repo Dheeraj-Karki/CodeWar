@@ -30,11 +30,12 @@ class Worker_2:public Thread
             std::cout<<"Worker 2 Finished "<<self()<<std::endl;
         }
 };
+typedef SmartPtr<Worker_2> WorkerPtr_2;
 
 int main()
 {
     WorkerPtr_1 w1 ( new Worker_1() );
-    Worker_2* w2 = new Worker_2();
+    WorkerPtr_2 w2 ( new Worker_2() );
     w1->start();
     w2->start();
     w1->join();
