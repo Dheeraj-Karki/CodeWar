@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Mutex	lib/include/mutex.hpp	/^        Mutex() { pthread_mutex_init(&m_mutex,NULL);};$/;"	f	class:Mutex
+Mutex	lib/include/mutex.hpp	/^class Mutex$/;"	c
+MutexTest	main_MutexTest.cpp	/^        MutexTest(Mutex& mutex) : m_mutex(mutex) {}$/;"	f	class:MutexTest
+MutexTest	main_MutexTest.cpp	/^class MutexTest : public Thread$/;"	c	file:
+NON_COPAYABLE	lib/include/delete.hpp	3;"	d
+SmartPtr	lib/include/smartptr.hpp	/^        explicit SmartPtr( T* ptr = NULL )$/;"	f	class:SmartPtr
+SmartPtr	lib/include/smartptr.hpp	/^class SmartPtr$/;"	c
+Thread	lib/include/thread.hpp	/^class Thread {$/;"	c
+Thread	lib/source/thread.cpp	/^Thread::Thread()$/;"	f	class:Thread
+Worker_1	main.cpp	/^class Worker_1:public Thread $/;"	c	file:
+Worker_2	main.cpp	/^class Worker_2:public Thread $/;"	c	file:
+detach	lib/source/thread.cpp	/^int Thread::detach()$/;"	f	class:Thread
+join	lib/source/thread.cpp	/^int Thread::join()$/;"	f	class:Thread
+lock	lib/include/mutex.hpp	/^        int lock(){ return pthread_mutex_lock(&m_mutex);};$/;"	f	class:Mutex
+m_bDetached	lib/include/thread.hpp	/^        int m_bDetached; $/;"	m	class:Thread
+m_bRunning	lib/include/thread.hpp	/^        int m_bRunning;$/;"	m	class:Thread
+m_mutex	lib/include/mutex.hpp	/^        pthread_mutex_t m_mutex;$/;"	m	class:Mutex
+m_mutex	main_MutexTest.cpp	/^    Mutex &m_mutex;$/;"	m	class:MutexTest	file:
+m_ptr	lib/include/smartptr.hpp	/^        T* m_ptr;$/;"	m	class:SmartPtr
+m_tid	lib/include/thread.hpp	/^        pthread_t m_tid;$/;"	m	class:Thread
+main	main.cpp	/^int main()$/;"	f
+main	main_MutexTest.cpp	/^int main(int argc, char** argv)$/;"	f
+operator *	lib/include/smartptr.hpp	/^        T& operator* ()$/;"	f	class:SmartPtr
+operator ->	lib/include/smartptr.hpp	/^        T& operator ->()$/;"	f	class:SmartPtr
+run	main.cpp	/^        void* run()$/;"	f	class:Worker_1
+run	main.cpp	/^        void* run()$/;"	f	class:Worker_2
+run	main_MutexTest.cpp	/^        void* run() {$/;"	f	class:MutexTest
+runThread	lib/source/thread.cpp	/^void* runThread( void* args )$/;"	f
+self	lib/source/thread.cpp	/^pthread_t Thread::self()$/;"	f	class:Thread
+start	lib/source/thread.cpp	/^int Thread::start()$/;"	f	class:Thread
+tryLock	lib/include/mutex.hpp	/^        int tryLock(){ return pthread_mutex_trylock(&m_mutex);};$/;"	f	class:Mutex
+unlock	lib/include/mutex.hpp	/^        int unlock(){ return pthread_mutex_unlock(&m_mutex);};$/;"	f	class:Mutex
+~Mutex	lib/include/mutex.hpp	/^        ~Mutex(){ pthread_mutex_destroy(&m_mutex);};$/;"	f	class:Mutex
+~SmartPtr	lib/include/smartptr.hpp	/^        virtual ~SmartPtr()$/;"	f	class:SmartPtr
+~Thread	lib/source/thread.cpp	/^Thread::~Thread()$/;"	f	class:Thread
